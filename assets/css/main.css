@@ -2142,8 +2142,9 @@ input, select, textarea {
 			}
 
 			.image.avatar img {
-				border-radius: 100%;
-				width: 100%;
+				width: 5.2rem;
+				height: 5.2rem;
+				border-radius: 50%;
 			}
 
 /* List */
@@ -2593,7 +2594,7 @@ input, select, textarea {
 		justify-content: space-between;
 		background-color: #1f1815;
 		background-attachment: scroll,								scroll;
-		background-image: url("images/overlay.png"), url("../../images/background_image.jpg");
+		background-image: url("images/overlay.png");
 		background-position: top left,							top left;
 		background-repeat: repeat,								no-repeat;
 		background-size: auto,								150%;
@@ -2605,8 +2606,8 @@ input, select, textarea {
 		text-align: right;
 		top: 0;
 		width: 35%;
+		overflow: scroll;
 	}
-
 		#header > * {
 			-moz-flex-shrink: 0;
 			-webkit-flex-shrink: 0;
@@ -2622,7 +2623,9 @@ input, select, textarea {
 			flex-grow: 1;
 			margin: 0 0 2em 0;
 		}
-
+		#header .inner h1 {
+			text-align: justify;
+		}
 		#header strong, #header b {
 			color: #ffffff;
 		}
@@ -2639,8 +2642,11 @@ input, select, textarea {
 		}
 
 		#header .image.avatar {
-			margin: 0 0 1em 0;
+			margin: auto;
 			width: 6.25em;
+			display: flex;
+			align-items: center;
+
 		}
 
 /* Footer */
